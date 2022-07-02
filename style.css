@@ -23,23 +23,16 @@ nav ul {
     font-size: 18px;
     display: flex;
     align-items: center;
-    margin-top: -28.7px;
-    
-      
+    margin-top: -28.7px;     
 }
 ul li {
     display: flex;
+    list-style: none;
     margin-right: 50px;
-    padding: 0px 20px;
-    
-    
-    
+    padding: 0px 20px;   
 }
 ul li:hover {
     border-top: #0065FC solid 2px;
-    
-    
-    
 }
 ul li a {
     color: black;
@@ -202,7 +195,8 @@ button {
     border-top-right-radius: 20px;   
 }
 .chambre-child {
-    padding-left: 15px;
+    
+    padding: 0px 0px 5px 15px;
 }
 .close {
     margin-top: -10px;
@@ -265,6 +259,7 @@ button {
     position: relative;
     padding-left: 20px;
 }
+
 /* FIN SECTION hebergements */
 /* DEBUT SECTION ACTIVITES */
 #activites {
@@ -487,33 +482,37 @@ footer {
 @media screen and (max-width: 767.9px) {
     header {
         padding-top: 5px;
-        margin: 0px;
+        margin-left: 0px;
     }
     .menu {
         display: flex;
-        flex-direction: column;
-        
-        align-items: center;
+        flex-direction: column;   
         
     }
     nav img {
-        margin-left: 20px;
+        display: flex;
+        align-self: center;
         width: 40%;
     }
+    
     nav ul {
+        display: flex;
+        justify-content: space-between;
         margin-top: 20px;
         border-bottom: #F2F2F2 solid 2px;
     }
     ul li {
-        display: flex;
-        justify-content: space-between;
-        padding: 0px 10px;
+        margin-right: 0px;
+        padding-bottom: 20px 0px;
     }
     ul li:hover {
         border-top: 0 none;
         border-bottom: #0065FC solid 2px;
         margin-bottom: -2px;
     }
+    #li-cote {
+        margin-left: -50px;
+    } 
     ul li a {
         padding-bottom: 15px;
     }
@@ -597,7 +596,7 @@ footer {
             width: 100%;
         }
         .populaires h1 {
-            margin: 5px;
+            margin: 15px;
         }
         .lis-popu {
             justify-content: none;
@@ -605,6 +604,18 @@ footer {
         .hotel {
             margin: 10px;
         }
+        .hotel-popu {
+            justify-content: left;
+        }
+        .hotel-popu img {
+            width: 35%;
+            margin-left: 0px;
+        }
+        .bleu-blanc img {
+            
+           height: 180px;
+        }
+        
     /* FIN SECTION HEBERGEMENTS */
     /* Début SECTION ACTIVITES */
     .actif {
