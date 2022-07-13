@@ -102,11 +102,9 @@ button {
     display: flex;
     align-items: center;
 }
-.listefiltres h2 {
-    margin-left: -20px;
-}
 .box {
-    margin-top: -15px;
+    margin-top: 0px;
+    margin-left: 10px;
     display: inline-flex;
 }
 .fl-box {
@@ -163,9 +161,13 @@ button {
     width: 63%;
     
 }
-.art-heb h1 {
+.art-heb h2 {
     margin-top: 50px;
     margin-left: 50px;
+}
+.art-heb h2 a {
+    color: black;
+    text-decoration: none;
 }
 .listehotels {
     display: flex;
@@ -215,7 +217,7 @@ button {
     border-radius: 20px;
     width: 37%
 }
-.populaires h1 {
+.popu-h {
     display: flex;
     justify-content: space-between;
     margin: 50px 50px 20px 50px;
@@ -245,19 +247,23 @@ button {
     padding: 5px;
 }
 .hotel-popu img {
-    width: 30%;
+    width: 40%;
+    height: 140px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-.bleu-blanc img {
-    height: 150px;
-    
-}
 
 .chambre-popu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     padding-left: 20px;
+    width: 60%;
+}
+.chambre-popu-h-p {
+    margin-right: 20px;
 }
 
 /* FIN SECTION hebergements */
@@ -326,13 +332,22 @@ button {
 footer {
     background-color: #F2F2F2;
     margin-top: 40px;
+}
+.itm-footer {
     display: flex;
-    justify-content: space-around;
-    
+}
+.propos {
+    margin-left: 40px;
+}
+.nos-hebergements {
+    margin-left: 19%;
+}
+.assistance {
+    margin-left: 19%;
 }
 
 /* VERSION ORDINATEUR */
-@media screen and (max-width: 1400px) and (min-width: 992px) {
+@media screen and (max-width: 1400px) and (min-width: 991px) {
     header {
         margin-left: 20px;
     }
@@ -402,7 +417,7 @@ footer {
 }
 
 /* VERSION tablettes */
-@media screen and (max-width: 991.9px) and (min-width: 768px) {
+@media screen and (max-width: 990.9px) and (min-width: 768px) {
     header {
         margin-left: 5px;
     }
@@ -415,17 +430,31 @@ footer {
         padding-top: 20px;
         margin-right: 10px;
     }
+    .header-hp {
+        margin-left: 10px;
+    }
     
     
 
     /* Début MAIN */
     main {
-        margin-left: 5px;
+        margin: 0px 10px;
     }
+        
         /* SECTION FILTRES */
+        
         .listefiltres {
+            margin-top: 10px;
             display: flex;
             flex-wrap: wrap;
+        }
+        .box {
+            margin-left: -4px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .fl-box {
+            margin-top: 10px;
         }
         /* SECTION HEBERGEMENTS */
         #hebergements {
@@ -436,11 +465,22 @@ footer {
             .art-heb {
                 width: 100%;
             }
+            .chambre-child {
+                padding: 0px;
+                margin: 0px 0px 5px 5px;
+            }
+            .close {
+                margin: 0px;
+            }
 
             /* ARTICLE POPULAIRE */
             .populaires {
                 width: 100%;
                 margin: 20px 0px;
+            }
+            .popu-h {
+                margin: 50px 30px 20px 30px;
+                
             }
             .lis-popu {
                 display: flex;
@@ -448,7 +488,7 @@ footer {
 
             }
             .hotel {
-                margin: 10px;
+                margin: 10px 10px 50px 10px;
                 width: 100%;
             }
 
@@ -469,13 +509,39 @@ footer {
             .bleu-blanc img {
                 height: 200px;
             }
+            .chambre-popu {
+                padding-left: 5px;
+                width: 100%;
+                display: flex;
+                
+                
+            }
+            .star-work {
+               margin-top: 20px;
+            }
+            
         /* FIN SECTION HEBERGEMENTS */
         /* SECTION ACTIVITES */
             .actif {
                 display: flex;
                 flex-direction: column;
-            }      
-    /* Fin MAIN */      
+            }
+    /* Fin MAIN */ 
+    /* Début footer */
+    .itm-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .propos {
+        margin-left: 0px;
+    }
+    .nos-hebergements {
+        margin-left: 0%;
+    }
+    .assistance {
+        margin-left: 0%;
+    }
 }
 
 /* VERSION MOBILE */
@@ -503,7 +569,7 @@ footer {
     }
     ul li {
         margin-right: 0px;
-        padding-bottom: 20px 0px;
+        padding-bottom: 20px;
     }
     ul li:hover {
         border-top: 0 none;
@@ -527,7 +593,7 @@ footer {
     }
         /* SECTION RECHERCHE */
         .recherche {
-            margin-left: 10px;
+            margin-left: 15px;
         }
         button {
             border-radius: 15px;
@@ -543,11 +609,13 @@ footer {
         display: flex;
         flex-flow: column wrap;
         align-items: flex-start;
+        margin-left: 10px;
     }
     .listefiltres h2 {
-        margin-left: 5px;
+        margin-left: 10px;
     }
     .box {
+        margin-left: -2px;
         display: flex;
         flex-flow: row wrap;
     }
@@ -559,7 +627,8 @@ footer {
         margin-top: 10px;
     }
     .p-loge {
-        margin-left: 10px;
+        margin-top: 10px;
+        margin-left: 20px;
     }
 
     /* SECTION HEBERGEMENTS */
@@ -572,7 +641,7 @@ footer {
             width: 100%;
             background-color: white;
         }
-        .art-heb h1 {
+        .art-heb h2 {
             margin-top: 40px;
             margin-left: 10px;
         }
@@ -590,36 +659,43 @@ footer {
         
         /* ARTICLE POPULARE */
         .populaires {
-            margin-right: 0px;
-            margin-left: 0px;
+            margin: 0px;
+            padding: 35px 0px;
             border-radius: 0%;
             width: 100%;
         }
-        .populaires h1 {
-            margin: 15px;
+        .populaires h2 {
+            margin: 0px;
+            padding: 0px 15px 15px 15px;
         }
-        .lis-popu {
-            justify-content: none;
-        }
+        
         .hotel {
-            margin: 10px;
+            margin: 5px 15px;
+
         }
         .hotel-popu {
             justify-content: left;
         }
+        .chambre-popu  h3 {
+            font-size: 20px;
+        }
         .hotel-popu img {
             width: 35%;
+            height: 150px;
+            object-fit: cover;
             margin-left: 0px;
         }
-        .bleu-blanc img {
-            
-           height: 180px;
-        }
+        
         
     /* FIN SECTION HEBERGEMENTS */
     /* Début SECTION ACTIVITES */
+    #activites h2 {
+        margin-left: 10px;
+    }
     .actif {
         flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .act {
         margin: 10px 0px;
@@ -633,12 +709,22 @@ footer {
         }
     /* Fin SECTION ACTIVITES */
     /* FOOTER */
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
-    footer div {
+    .itm-footer {
+        display: block;
         margin-left: 20px;
-    } 
+    }
+    .itm-footer div {
+        padding-top: 15px;
+    }
+    .propos {
+        margin-left: 0;
+    }
+    .nos-hebergements {
+        margin-left: 0;
+    }
+    .assistance {
+        margin-left: 0;
+        padding-bottom: 20px;
+    }
     
 }
