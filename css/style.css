@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Inter:wght@400;700&family=Lexend+Deca&family=Merriweather:ital@0;1&family=Raleway:wght@400;700&family=Roboto&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+}
+/* HEADER */
+header {
+    padding-top: 15px;
+    margin-left: 40px;
+    
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+   
+}
+nav img {
+    width: 8%;
+    padding-left: 20px;
+}
+nav ul {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-top: -28.7px;     
+}
+ul li {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+    padding: 0px 20px;   
+}
+ul li:hover {
+    border-top: #0065FC solid 2px;
+}
+ul li a {
+    color: black;
+    text-decoration: none;
+    padding-top: 30px;
+    
+}
+ul li a:hover {
+    color: #0065FC;
+   
+}
+header div h1 {
+    font-size: 22px;
+}
+header div p {
+    font-size: 15.5px;
+}
+/* FIN HEADER */
+/* MAIN */
+main {
+    margin-left: 40px;
+}
+/* SECTION RECHERCHE */
+.recherche{
+    display: inline-flex;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;    
+    
+}
+#fa-search {
+    display: none;
+}
+.fa-map-marker-alt {
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #F2F2F2;
+    
+}
+
+.champ {
+    border: none;
+    border-right: none;
+    font-size: 18px;
+}
+input::placeholder {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    color: whitesmoke;
+    background-color: #0065FC;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: -2px 0px;
+}
+/* FIN SECTION RECHERCHE */
+/* DEBUT SECTION FILTRES */
+.listefiltres {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.box {
+    margin-top: 0px;
+    margin-left: 10px;
+    display: inline-flex;
+}
+.fl-box {
+    display: flex;
+    margin-left: 30px;
+    border: 3px solid #F2F2F2;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-left: none;    
+}
+.fl-box i {
+    color: #0065FC;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #DEEBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -3px 10px -3px -25px;
+    
+}
+.fl-text {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#i-rond {
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: #0065FC;
+    padding: 2px 10px;
+    margin-right: 5px;
+}
+.p-loge {
+    display: inline-flex;
+}
+/* FIN SECTION FILTRES */
+/* SECTION HEBERGEMENTS */
+#hebergements {
+    display: flex;
+    flex-direction: row;
+}
+/* ARTICLE HEBERGEMENTS MARSEILLE */
+.art-heb {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 63%;
+    
+}
+.art-heb h2 {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.art-heb h2 a {
+    color: black;
+    text-decoration: none;
+}
+.listehotels {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 20px;
+    
+    
+    
+}
+.chambre {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 100%;
+   
+
+}
+.chambre img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;   
+}
+.chambre-child {
+    
+    padding: 0px 0px 5px 15px;
+}
+.close {
+    margin-top: -10px;
+}
+.fa-star {
+    color: #0065FC;
+}
+.white-star {
+    color: #cecaca;
+}
+/* ARTICLE POPULAIRES */
+.populaires {
+    background-color: #F2F2F2;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    width: 37%
+}
+.popu-h {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px -20px 50px;
+    
+}
+.lis-popu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+       
+}
+
+#black-star {
+    color: black;
+}
+
+.hotel {
+    background-color: white;
+    margin: 55px 55px 0px 55px;
+    border-radius: 20px;
+    
+}
+.hotel-popu {
+    display: flex;    
+    padding: 5px;
+}
+.hotel-popu img {
+    height: auto;
+    width: 37%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.chambre-popu {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 1px;
+}
+/* FIN SECTION hebergements */
+/* DEBUT SECTION ACTIVITES */
+#activites {
+    margin-top: 60px;
+}
+.actif {
+    display: flex;
+    flex-direction: row;
+       
+}
+.act {
+    width: 100%;
+    margin: 20px 30px 20px 0px;
+}
+.act h3 {
+    margin-left: 20px;
+}
+/* DIV VIEUX PORT & DIV PARC NATIONAL */
+.vieux, .parc {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+}
+.vieux img, .parc img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/* DIV FORT DE POMEGUES ET IL DE FRIOUL & DIV NOTRE-DAME ET PARC LONGCHAMP*/
+
+#fort, #dame {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#fort img, #dame img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#frioul, #champ {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 40px;
+}
+#frioul img, #champ img {
+    
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/* FIN SECTION ACTIVITES */
+/* FIN MAIN */
+/* DEBUT FOOTER */
+footer {
+    background-color: #F2F2F2;
+    margin-top: 40px;
+}
+.itm-footer {
+    display: flex;
+}
+.propos {
+    margin-left: 40px;
+}
+.nos-hebergements {
+    margin-left: 19%;
+}
+.assistance {
+    margin-left: 19%;
+}
+
+/* VERSION tablettes */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    header {
+        margin-left: 5px;
+    }
+    nav ul {
+       margin-top: -24px   
+    }
+    
+    ul li {
+        display: block;
+        padding-top: 20px;
+        margin-right: 10px;
+    }
+    .header-hp {
+        margin-left: 10px;
+    }
+    
+    
+
+    /* Début MAIN */
+    main {
+        margin: 0px 10px;
+    }
+        
+        /* SECTION FILTRES */
+        
+        .listefiltres {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+            margin-left: -4px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .fl-box {
+            margin-top: 10px;
+        }
+        /* SECTION HEBERGEMENTS */
+        #hebergements {
+            display: flex;
+            flex-direction: column;
+        }
+            /* ARTICLE HEBERGEMENTS MARSEILLE */
+            .art-heb {
+                width: 100%;
+            }
+            .chambre-child {
+                padding: 0px;
+                margin: 0px 0px 5px 5px;
+            }
+            .close {
+                margin: 0px;
+            }
+
+            /* ARTICLE POPULAIRE */
+            .populaires {
+                width: 100%;
+                margin: 20px 0px;
+            }
+            .popu-h {
+                margin: 50px 30px 20px 30px;
+                
+            }
+            .lis-popu {
+                display: flex;
+                flex-direction: row;
+
+            }
+            .hotel {
+                margin: 10px 10px 50px 10px;
+                width: 100%;
+            }
+
+            .hotel-popu {
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+            }
+            .hotel-popu img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                border-bottom-left-radius: 0px;
+            }
+            
+            .chambre-popu {
+                width: auto;
+                margin-left: 5px;
+                margin-right: 5px;  
+            }
+            
+            
+            
+            
+        /* FIN SECTION HEBERGEMENTS */
+        /* SECTION ACTIVITES */
+            .actif {
+                display: flex;
+                flex-direction: column;
+            }
+    /* Fin MAIN */ 
+    /* Début footer */
+        .itm-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .propos {
+            margin-left: 0px;
+        }
+        .nos-hebergements {
+            margin-left: 0%;
+        }
+        .assistance {
+            margin-left: 0%;
+        }
+}
+
+/* VERSION MOBILE */
+@media screen and (max-width: 767.9px) {
+    header {
+        padding-top: 5px;
+        margin-left: 0px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;   
+        
+    }
+    nav img {
+        display: flex;
+        align-self: center;
+        width: 40%;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        border-bottom: #F2F2F2 solid 2px;
+    }
+    ul li {
+        margin-right: 0px;
+        padding-bottom: 20px;
+    }
+    ul li:hover {
+        border-top: 0 none;
+        border-bottom: #0065FC solid 2px;
+        margin-bottom: -2px;
+    }
+    #li-cote {
+        margin-left: -50px;
+    } 
+    ul li a {
+        padding-bottom: 15px;
+    }
+    header div h1, header div p {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    /* Début MAIN */
+    main {
+        margin: 40px  0px;
+    }
+        /* SECTION RECHERCHE */
+        .recherche {
+            margin-left: 15px;
+        }
+        button {
+            border-radius: 15px;
+        }
+        #search {
+            display: none;
+        }
+        #fa-search {
+            display: contents;
+        }
+    /* SECTION FILTRES */
+    .listefiltres {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+    .listefiltres h2 {
+        margin-left: 10px;
+    }
+    .box {
+        margin-left: -2px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .fl-text {
+      padding: 5px;
+    }
+    .fl-box {
+        
+        margin-top: 10px;
+    }
+    .p-loge {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    /* SECTION HEBERGEMENTS */
+    #hebergements {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+        /* ARTICLE HEBERGEMENTS MARSEILLE */
+        .art-heb {
+            width: 100%;
+            background-color: white;
+        }
+        .art-heb h2 {
+            margin-top: 40px;
+            margin-left: 10px;
+        }
+        .listehotels {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px 10px;
+            
+        }
+        .chambre {
+            margin: 10px;
+           
+        }
+        
+        /* ARTICLE POPULARE */
+        .populaires {
+            margin: 0px;
+            padding: 35px 0px;
+            border-radius: 0%;
+            width: 100%;
+        }
+        .populaires h2 {
+            margin: 0px;
+            padding: 0px 15px 15px 15px;
+        }
+        
+        .hotel {
+            margin: 5px 15px;
+
+        }
+        .hotel-popu {
+            justify-content: left;
+        }
+        .chambre-popu  h3 {
+            font-size: 20px;
+        }
+        .hotel-popu img {
+            width: 35%;
+            height: 150px;
+            object-fit: cover;
+            margin-left: 0px;
+        }
+        
+        
+    /* FIN SECTION HEBERGEMENTS */
+    /* Début SECTION ACTIVITES */
+    #activites h2 {
+        margin-left: 10px;
+    }
+    .actif {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .act {
+        margin: 10px 0px;
+    }
+        /* DIV FORT DE POMEGUES */
+        .vieux img, .parc img {
+            height: 150px;
+        }
+        #fort img, #dame img {
+            height: 150px;
+        }
+    /* Fin SECTION ACTIVITES */
+    /* FOOTER */
+    .itm-footer {
+        display: block;
+        margin-left: 20px;
+    }
+    .itm-footer div {
+        padding-top: 15px;
+    }
+    .propos {
+        margin-left: 0;
+    }
+    .nos-hebergements {
+        margin-left: 0;
+    }
+    .assistance {
+        margin-left: 0;
+        padding-bottom: 20px;
+    }
+    
+}
