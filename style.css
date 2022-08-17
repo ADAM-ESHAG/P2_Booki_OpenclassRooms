@@ -6,12 +6,14 @@ body {
 header {
     padding-top: 15px;
     margin-left: 40px;
+    
 }
 .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     
+   
 }
 nav img {
     width: 8%;
@@ -21,47 +23,47 @@ nav ul {
     font-size: 18px;
     display: flex;
     align-items: center;
-    margin-top: -29px;
-    position: relative;
-      
+    margin-top: -28.7px;     
 }
 ul li {
     display: flex;
-    margin-right: 80px;
-    padding: 0px 30px;
+    list-style: none;
+    margin-right: 50px;
+    padding: 0px 20px;   
 }
 ul li:hover {
     border-top: #0065FC solid 2px;
-    
 }
 ul li a {
     color: black;
     text-decoration: none;
     padding-top: 30px;
+    
 }
 ul li a:hover {
     color: #0065FC;
+   
 }
 header div h1 {
-    font-size: 21px;
+    font-size: 22px;
 }
 header div p {
     font-size: 15.5px;
 }
 /* FIN HEADER */
 /* MAIN */
-/* SECTION RECHERCHE */
 main {
     margin-left: 40px;
 }
+/* SECTION RECHERCHE */
 .recherche{
-    display: flex;
-    justify-content: flex-start;
+    display: inline-flex;
     border: 2px solid #F2F2F2;
-    border-radius: 20px;
-    margin-right: 75%;
+    border-radius: 20px;    
     
-    
+}
+#fa-search {
+    display: none;
 }
 .fa-map-marker-alt {
     padding: 15px;
@@ -91,6 +93,7 @@ button {
     background-color: #0065FC;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    margin: -2px 0px;
 }
 /* FIN SECTION RECHERCHE */
 /* DEBUT SECTION FILTRES */
@@ -98,6 +101,13 @@ button {
     margin-top: 20px;
     display: flex;
     align-items: center;
+}
+.listefiltres h2 {
+    margin-left: -20px;
+}
+.box {
+    margin-top: -15px;
+    display: inline-flex;
 }
 .fl-box {
     display: flex;
@@ -124,7 +134,21 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 15px;
+    padding: 0px 20px;
+}
+
+#i-rond {
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: #0065FC;
+    padding: 2px 10px;
+    margin-right: 5px;
+}
+.p-loge {
+    display: inline-flex;
 }
 /* FIN SECTION FILTRES */
 /* SECTION HEBERGEMENTS */
@@ -132,11 +156,16 @@ button {
     display: flex;
     flex-direction: row;
 }
+/* ARTICLE HEBERGEMENTS MARSEILLE */
 .art-heb {
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 63%;
     
+}
+.art-heb h1 {
+    margin-top: 50px;
+    margin-left: 50px;
 }
 .listehotels {
     display: flex;
@@ -145,25 +174,38 @@ button {
     margin: 20px;
     
     
+    
 }
 .chambre {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 10px;
     background-color: white;
-    border: 5px solid white;
     border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 100%;
    
 
 }
 .chambre img {
-    
     width: 100%;
-    height: 100px;
+    height: 120px;
+    object-fit: cover;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 20px;   
+}
+.chambre-child {
     
+    padding: 0px 0px 5px 15px;
+}
+.close {
+    margin-top: -10px;
+}
+.fa-star {
+    color: #0065FC;
+}
+.white-star {
+    color: #cecaca;
 }
 /* ARTICLE POPULAIRES */
 .populaires {
@@ -173,14 +215,23 @@ button {
     border-radius: 20px;
     width: 37%
 }
+.populaires h1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px 20px 50px;
+    
+}
 .lis-popu {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
        
 }
-.lis-popu h1 {
-    margin-left: 50px;
+
+#black-star {
+    color: black;
 }
+
 .hotel {
     background-color: white;
     margin: 20px 50px;
@@ -189,20 +240,405 @@ button {
 }
 .hotel-popu {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
+    justify-content: space-around;    
     padding: 5px;
 }
 .hotel-popu img {
     width: 30%;
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 .bleu-blanc img {
-    height: 130px;
+    height: 150px;
+    
 }
 
 .chambre-popu {
     position: relative;
     padding-left: 20px;
 }
+
+/* FIN SECTION hebergements */
+/* DEBUT SECTION ACTIVITES */
+#activites {
+    margin-top: 60px;
+}
+.actif {
+    display: flex;
+    flex-direction: row;
+       
+}
+.act {
+    width: 100%;
+    margin: 20px 30px 20px 0px;
+}
+.act h3 {
+    margin-left: 20px;
+}
+/* DIV VIEUX PORT & DIV PARC NATIONAL */
+.vieux, .parc {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+}
+.vieux img, .parc img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/* DIV FORT DE POMEGUES ET IL DE FRIOUL & DIV NOTRE-DAME ET PARC LONGCHAMP*/
+
+#fort, #dame {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#fort img, #dame img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#frioul, #champ {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 40px;
+}
+#frioul img, #champ img {
+    
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/* FIN SECTION ACTIVITES */
 /* FIN MAIN */
+/* DEBUT FOOTER */
+footer {
+    background-color: #F2F2F2;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* VERSION ORDINATEUR */
+@media screen and (max-width: 1400px) and (min-width: 992px) {
+    header {
+        margin-left: 20px;
+    }
+    nav ul {
+       margin-top: -26px; 
+    }
+    ul li {
+        display: block;
+        padding-top: 15px;    
+    }
+    header div h1 {
+        font-size: 18px;
+    }
+    
+    /* DEBUT MAIN */
+    main {
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+    /* SECTION HEBERGEMENT */
+    #hebergements {
+        display: flex;
+        flex-direction: column;
+    }
+        /* ARTICLE HEBERGEMENTS MARSEILLE */
+    .art-heb {
+        width: 100%;
+    }
+    .chambre img {
+        height: 200px;
+    }
+        /* ARTICLE POPULAIRES */
+    .populaires {
+        width: 100%;
+        margin: 20px 0px;
+        
+    }
+    .populaires h1 {
+        margin: 50px 20px 20px 20px;
+    }
+    .lis-popu {
+        display: flex;
+        flex-direction: row;
+        margin: 0px 20px 50px 20px;
+        
+    }
+    .hotel {
+        width: 100%;
+        margin: 10px;
+    }
+    .hotel-popu img {
+        width: 40%;
+        height: 230px;
+    }
+    /* FIN SECTION HEBERGEMENTS */
+    .actif {
+        display: flex;
+        flex-direction: column;
+    }
+    #fort img, #dame img, #frioul img, #champ img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    } 
+    /* FIN MAIN */
+    
+}
+
+/* VERSION tablettes */
+@media screen and (max-width: 991.9px) and (min-width: 768px) {
+    header {
+        margin-left: 5px;
+    }
+    nav ul {
+       margin-top: -24px   
+    }
+    
+    ul li {
+        display: block;
+        padding-top: 20px;
+        margin-right: 10px;
+    }
+    
+    
+
+    /* Début MAIN */
+    main {
+        margin-left: 5px;
+    }
+        /* SECTION FILTRES */
+        .listefiltres {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* SECTION HEBERGEMENTS */
+        #hebergements {
+            display: flex;
+            flex-direction: column;
+        }
+            /* ARTICLE HEBERGEMENTS MARSEILLE */
+            .art-heb {
+                width: 100%;
+            }
+
+            /* ARTICLE POPULAIRE */
+            .populaires {
+                width: 100%;
+                margin: 20px 0px;
+            }
+            .lis-popu {
+                display: flex;
+                flex-direction: row;
+
+            }
+            .hotel {
+                margin: 10px;
+                width: 100%;
+            }
+
+            .hotel-popu {
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+            }
+            .hotel-popu img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                border-bottom-left-radius: 0px;
+            }
+            
+            .bleu-blanc img {
+                height: 200px;
+            }
+        /* FIN SECTION HEBERGEMENTS */
+        /* SECTION ACTIVITES */
+            .actif {
+                display: flex;
+                flex-direction: column;
+            }      
+    /* Fin MAIN */      
+}
+
+/* VERSION MOBILE */
+@media screen and (max-width: 767.9px) {
+    header {
+        padding-top: 5px;
+        margin-left: 0px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;   
+        
+    }
+    nav img {
+        display: flex;
+        align-self: center;
+        width: 40%;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        border-bottom: #F2F2F2 solid 2px;
+    }
+    ul li {
+        margin-right: 0px;
+        padding-bottom: 20px 0px;
+    }
+    ul li:hover {
+        border-top: 0 none;
+        border-bottom: #0065FC solid 2px;
+        margin-bottom: -2px;
+    }
+    #li-cote {
+        margin-left: -50px;
+    } 
+    ul li a {
+        padding-bottom: 15px;
+    }
+    header div h1, header div p {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    /* Début MAIN */
+    main {
+        margin: 40px  0px;
+    }
+        /* SECTION RECHERCHE */
+        .recherche {
+            margin-left: 10px;
+        }
+        button {
+            border-radius: 15px;
+        }
+        #search {
+            display: none;
+        }
+        #fa-search {
+            display: contents;
+        }
+    /* SECTION FILTRES */
+    .listefiltres {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+    .listefiltres h2 {
+        margin-left: 5px;
+    }
+    .box {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .fl-text {
+      padding: 5px;
+    }
+    .fl-box {
+        
+        margin-top: 10px;
+    }
+    .p-loge {
+        margin-left: 10px;
+    }
+
+    /* SECTION HEBERGEMENTS */
+    #hebergements {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+        /* ARTICLE HEBERGEMENTS MARSEILLE */
+        .art-heb {
+            width: 100%;
+            background-color: white;
+        }
+        .art-heb h1 {
+            margin-top: 40px;
+            margin-left: 10px;
+        }
+        .listehotels {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px 10px;
+            
+        }
+        .chambre {
+            margin: 10px;
+           
+        }
+        
+        /* ARTICLE POPULARE */
+        .populaires {
+            margin-right: 0px;
+            margin-left: 0px;
+            border-radius: 0%;
+            width: 100%;
+        }
+        .populaires h1 {
+            margin: 15px;
+        }
+        .lis-popu {
+            justify-content: none;
+        }
+        .hotel {
+            margin: 10px;
+        }
+        .hotel-popu {
+            justify-content: left;
+        }
+        .hotel-popu img {
+            width: 35%;
+            margin-left: 0px;
+        }
+        .bleu-blanc img {
+            
+           height: 180px;
+        }
+        
+    /* FIN SECTION HEBERGEMENTS */
+    /* Début SECTION ACTIVITES */
+    .actif {
+        flex-direction: column;
+    }
+    .act {
+        margin: 10px 0px;
+    }
+        /* DIV FORT DE POMEGUES */
+        .vieux img, .parc img {
+            height: 150px;
+        }
+        #fort img, #dame img {
+            height: 150px;
+        }
+    /* Fin SECTION ACTIVITES */
+    /* FOOTER */
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer div {
+        margin-left: 20px;
+    } 
+    
+}
