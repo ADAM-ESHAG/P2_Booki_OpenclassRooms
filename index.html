@@ -4,8 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width"/>
         <!-- Link to CSS File -->
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="icon" href="images/logo/Booki.png" type="image/logo">
         <title>Booki</title>
@@ -25,7 +24,7 @@
                     </li>
                 </ul>    
             </nav>
-            <div>
+            <div class="header-hp">
                 <h1>Trouvez votre hébergement pour des vacances des rêves</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
@@ -45,7 +44,7 @@
             <!-- Section filtres -->
             <section class="sec-filtres">
                 <div class="listefiltres">
-                    <h2 class="fl-text">Filtres</h2>
+                    <h2>Filtres</h2>
                     <div class="box">
                         <span class="fl-box">
                             <i class="fas fa-money-bill-wave"></i>
@@ -76,7 +75,7 @@
             <section id="hebergements">
                 <article class="art-heb">
                     <div>
-                        <h1>Hébergements à Marseille</h1>
+                        <h2>Hébergements à Marseille</h2>
                         <!-- Hotel liste -->
                         
                         <div class="listehotels">
@@ -173,12 +172,12 @@
                                 </div>    
                             </div>
                         </div>
-                        <h1>Afficher plus</h1>            
+                        <h2><a href="#">Afficher plus</a></h2>            
                     </div>
                 </article>
                 <!-- Article les plus populaires -->
                 <article class="populaires">
-                    <h1>Les plus populaires<samp><i class="fa-solid fa-star" id="black-star"></i></samp></h1>
+                    <h2 class="popu-h">Les plus populaires<samp><i class="fas fa-star" id="black-star"></i></samp></h2>
                     
                     <!-- Liste d'hotels populaire -->
                     <div class="lis-popu">
@@ -188,8 +187,10 @@
                             <div class="hotel-popu">
                                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="le-soleil">
                                 <div class="chambre-popu">
-                                    <h2>Hôtel le soleil du matin</h2>
-                                    <p>Nuit à partir de 128€</p>
+                                    <div class="chambre-popu-h-p">
+                                        <h3>Hôtel le soleil du matin</h3>
+                                        <p>Nuit à partir de 128€</p>
+                                    </div>
                                     <div class="star">
                                         <span>
                                             <i class="fas fa-star"></i>
@@ -208,8 +209,10 @@
                             <div class="hotel-popu">
                                 <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Coeur-eau">
                                 <div class="chambre-popu">
-                                    <h2>Au coeur de l'eau Chambre d'hôtes</h2>
-                                    <p>Nuit à partir de 71€</p>
+                                    <div class="chambre-popu-h-p">
+                                        <h3>Au coeur de l'eau Chambre d'hôtes</h3>
+                                        <p>Nuit à partir de 71€</p>
+                                    </div>
                                     <div class="star">
                                         <span>
                                             <i class="fas fa-star"></i>
@@ -226,10 +229,12 @@
                         <!-- Hotel tout bleu et blanc -->
                         <div class="hotel">
                             <div class="hotel-popu bleu-blanc">
-                                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="bleu-blanc">
+                                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsp.jpg" alt="bleu-blanc">
                                 <div class="chambre-popu">
-                                    <h2>Hôtel Tout bleu ou Blanc</h2>
-                                    <p>Nuit à partir de 68€</p>
+                                    <div class="chambre-popu-h-p">
+                                        <h3>Hôtel Tout bleu ou Blanc</h3>
+                                        <p>Nuit à partir de 68€</p>
+                                    </div>
                                     <div class="star">
                                         <span>
                                             <i class="fas fa-star"></i>
@@ -248,7 +253,7 @@
             </section>
             <!-- Section Activités Marseille -->
             <section id="activites">
-                <h1>Activités è Marseille</h1>
+                <h2>Activités à Marseille</h2>
                 <div class="actif">
                     <!-- div vieux port -->
                     <div class="act">
@@ -311,24 +316,26 @@
         </main>
         <!-- Footer -->
         <footer>
-            <!-- div a propos -->
-            <div class="propos">
-                <h2>A propos</h2>
-                <p>Fonctionnement du site</p>
-                <p>Conditions générales de vente</p>
-                <p>Données et confidentialités</p>
-            </div>
-            <!-- div nos hébergements -->
-            <div class="nos-hebergements">
-                <h2>Nos hébergements</h2>
-                <p>Charte qualité</p>
-                <p>Soumettre votre hôtel</p>
-            </div>
-            <!-- div Assistance -->
-            <div class="assistance">
-                <h2>Assistance</h2>
-                <p>Centre d'aide</p>
-                <p>Nous contacter</p>
+            <div class="itm-footer">
+                <!-- div a propos -->
+                <div class="propos">
+                    <h3>A propos</h3>
+                    <p>Fonctionnement du site</p>
+                    <p>Conditions générales de vente</p>
+                    <p>Données et confidentialités</p>
+                </div>
+                <!-- div nos hébergements -->
+                <div class="nos-hebergements">
+                    <h3>Nos hébergements</h3>
+                    <p>Charte qualité</p>
+                    <p>Soumettre votre hôtel</p>
+                </div>
+                <!-- div Assistance -->
+                <div class="assistance">
+                    <h3>Assistance</h3>
+                    <p>Centre d'aide</p>
+                    <p>Nous contacter</p>
+                </div>
             </div>
 
         </footer>

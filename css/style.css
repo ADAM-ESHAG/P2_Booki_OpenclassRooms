@@ -220,7 +220,7 @@ button {
 .popu-h {
     display: flex;
     justify-content: space-between;
-    margin: 50px 50px 20px 50px;
+    margin: 50px 50px -20px 50px;
     
 }
 .lis-popu {
@@ -236,36 +236,29 @@ button {
 
 .hotel {
     background-color: white;
-    margin: 20px 50px;
+    margin: 55px 55px 0px 55px;
     border-radius: 20px;
     
 }
 .hotel-popu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;    
+    display: flex;    
     padding: 5px;
 }
 .hotel-popu img {
-    width: 40%;
-    height: 140px;
+    height: auto;
+    width: 37%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-
 .chambre-popu {
+    width: 63%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
-    padding-left: 20px;
-    width: 60%;
+    margin-left: 20px;
+    margin-right: 1px;
 }
-.chambre-popu-h-p {
-    margin-right: 20px;
-}
-
 /* FIN SECTION hebergements */
 /* DEBUT SECTION ACTIVITES */
 #activites {
@@ -346,78 +339,8 @@ footer {
     margin-left: 19%;
 }
 
-/* VERSION ORDINATEUR */
-@media screen and (max-width: 1400px) and (min-width: 991px) {
-    header {
-        margin-left: 20px;
-    }
-    nav ul {
-       margin-top: -26px; 
-    }
-    ul li {
-        display: block;
-        padding-top: 15px;    
-    }
-    header div h1 {
-        font-size: 18px;
-    }
-    
-    /* DEBUT MAIN */
-    main {
-        margin-left: 20px;
-        margin-right: 40px;
-    }
-    /* SECTION HEBERGEMENT */
-    #hebergements {
-        display: flex;
-        flex-direction: column;
-    }
-        /* ARTICLE HEBERGEMENTS MARSEILLE */
-    .art-heb {
-        width: 100%;
-    }
-    .chambre img {
-        height: 200px;
-    }
-        /* ARTICLE POPULAIRES */
-    .populaires {
-        width: 100%;
-        margin: 20px 0px;
-        
-    }
-    .populaires h1 {
-        margin: 50px 20px 20px 20px;
-    }
-    .lis-popu {
-        display: flex;
-        flex-direction: row;
-        margin: 0px 20px 50px 20px;
-        
-    }
-    .hotel {
-        width: 100%;
-        margin: 10px;
-    }
-    .hotel-popu img {
-        width: 40%;
-        height: 230px;
-    }
-    /* FIN SECTION HEBERGEMENTS */
-    .actif {
-        display: flex;
-        flex-direction: column;
-    }
-    #fort img, #dame img, #frioul img, #champ img {
-        width: 100%;
-        height: 450px;
-        object-fit: cover;
-    } 
-    /* FIN MAIN */
-    
-}
-
 /* VERSION tablettes */
-@media screen and (max-width: 990.9px) and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px){
     header {
         margin-left: 5px;
     }
@@ -506,19 +429,14 @@ footer {
                 border-bottom-left-radius: 0px;
             }
             
-            .bleu-blanc img {
-                height: 200px;
-            }
             .chambre-popu {
-                padding-left: 5px;
-                width: 100%;
-                display: flex;
-                
-                
+                width: auto;
+                margin-left: 5px;
+                margin-right: 5px;  
             }
-            .star-work {
-               margin-top: 20px;
-            }
+            
+            
+            
             
         /* FIN SECTION HEBERGEMENTS */
         /* SECTION ACTIVITES */
@@ -528,20 +446,20 @@ footer {
             }
     /* Fin MAIN */ 
     /* Début footer */
-    .itm-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .propos {
-        margin-left: 0px;
-    }
-    .nos-hebergements {
-        margin-left: 0%;
-    }
-    .assistance {
-        margin-left: 0%;
-    }
+        .itm-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .propos {
+            margin-left: 0px;
+        }
+        .nos-hebergements {
+            margin-left: 0%;
+        }
+        .assistance {
+            margin-left: 0%;
+        }
 }
 
 /* VERSION MOBILE */
